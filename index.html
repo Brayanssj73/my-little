@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ADA4</title>
+        <meta content="ADA4,Brayan" name="content">
+        <meta content="Brayan Gonzalez" name="Author">
+        <meta content="width=device-width,initial-scale" name="viewport">
+    </head>
+    <body>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/logica.js"></script>
+    <h1>Formulario para saber que tipo de pony de my little pony eres</h1>
+        <div id="outside">
+            <div class="Container">
+            <form id="survey-from" class="form" name="form1" onsubmit="redirigir()" method="post" target="_blank">
+                <!--Personal Details-->
+                <fieldset id="form-personaldata">
+                    <!--groups of widgets that share the same purpose, for styling and semantic purposes-->
+                    <legend>Datos importantes</legend>
+                    <!--Formally describes the púrpose of the fieldset it-->
+                    <div>
+                        <label id="name-label" for="name">Nombre:</label>
+                        <input type="text" required id="name" name="userm name" placeholder="Introduce tu nombre aquí">
+                    </div>
+                    <div>
+                        <label>Numero de telefono:</label>
+                        <input type="number" id="Phonenumber"  name="Phonenumber" placeholder="Introduce tu nombre de telefono aquí">
+                        </div>
+                    <div>
+                        <label id="email-label" for="email">Email:</label>
+                        <input type="email" required id="email" name="user_email" placeholder="Introduce email aquí">
+                    </div>
+                    <div>
+                        <label>Fecha solicitada:</label>
+                        <input type="date" id="Fecha" name="Fecha">
+                    </div>
+                </fieldset>
+                    <!--Radio buttons-->
+                    <fieldset>
+                    <div>
+                        <label>Genero</label>
+                        <p>
+                            <input type="radio" name="Genero" value="niño">Caballo<br>
+                            <input type="radio" name="Genero" value="niña">Las caballas se llaman yeguas<br>
+                        </p>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                        <label>¿Que te gusta mas?</label>
+                        <p>
+                            <input type="radio" name="Salir" value="salir">Salir con amigos<br>
+                            <input type="radio" name="Casa" value="casa">Quedarte en casa<br>
+                        </p>
+                    </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>
+                        <label>¿Que prefieres?</label>
+                        <p>
+                            <input type="radio" name="Horchata" value="Horchata">Horchata<br>
+                            <input type="radio" name="Jamaica" value="Jamaica">Jamaica<br>
+                        </p>
+                    </div>
+            </fieldset>
+                <!--dropdown menus-->
+                <fieldset>
+                    <div>
+                        <label>Que color te gusta mas?</label>
+                        <select id="colores">
+                            <option value="Morado">Morado</option>
+                            <option value="Naranja">Naranja</option>
+                            <option value="Azul">Azul</option>
+                            <option  value="Blanco">Blanco</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>¿Que juegos te gustan?</label>
+                        <select id="Juegos">
+                            <option value="Mesa">De mesa</option>
+                            <option value="Videojuegos">Videojuegos</option>
+                            <option value="Fisicos">Fisicos</option>
+                            <option  value="Todos">Ninguno</option>
+                        </select>
+                    </div>
+                       <div>
+                        <label>Que tipo de musica te gusta?</label>
+                        <select id="Musica">
+                            <option value="paginados.html">De todo</option>
+                            <option value="paginatres.html">pop y rock</option>
+                            <option value="paginacuatro.html">Regueton y corridos</option>
+                            <option value="paginacinco.html">Acustica</option>
+                            <option value="paginaseis.html">No eligas esta opción 💀💀</option>
+                        </select>
+                    </div>
+                </fieldset>
+                        <button onclick="redirigir()">Enviar</button>
+            </form>
+        </div>
+        </div>
+        </body>
+</html>
